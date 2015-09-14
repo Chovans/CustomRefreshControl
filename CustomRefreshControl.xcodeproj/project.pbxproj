@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CE443C861BA6B72200D0B834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443C851BA6B72200D0B834 /* AppDelegate.swift */; };
-		CE443C881BA6B72200D0B834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443C871BA6B72200D0B834 /* ViewController.swift */; };
 		CE443C8B1BA6B72200D0B834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE443C891BA6B72200D0B834 /* Main.storyboard */; };
 		CE443C8D1BA6B72200D0B834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE443C8C1BA6B72200D0B834 /* Assets.xcassets */; };
 		CE443C901BA6B72200D0B834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE443C8E1BA6B72200D0B834 /* LaunchScreen.storyboard */; };
 		CE443C9B1BA6B72200D0B834 /* CustomRefreshControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443C9A1BA6B72200D0B834 /* CustomRefreshControlTests.swift */; };
 		CE443CA61BA6B72200D0B834 /* CustomRefreshControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443CA51BA6B72200D0B834 /* CustomRefreshControlUITests.swift */; };
+		CE443CB61BA6BB5A00D0B834 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443CB51BA6BB5A00D0B834 /* MyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		CE443C821BA6B72200D0B834 /* CustomRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomRefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE443C851BA6B72200D0B834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE443C871BA6B72200D0B834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE443C8A1BA6B72200D0B834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE443C8C1BA6B72200D0B834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE443C8F1BA6B72200D0B834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		CE443CA11BA6B72200D0B834 /* CustomRefreshControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomRefreshControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE443CA51BA6B72200D0B834 /* CustomRefreshControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRefreshControlUITests.swift; sourceTree = "<group>"; };
 		CE443CA71BA6B72200D0B834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE443CB51BA6BB5A00D0B834 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				CE443C851BA6B72200D0B834 /* AppDelegate.swift */,
-				CE443C871BA6B72200D0B834 /* ViewController.swift */,
 				CE443C891BA6B72200D0B834 /* Main.storyboard */,
 				CE443C8C1BA6B72200D0B834 /* Assets.xcassets */,
 				CE443C8E1BA6B72200D0B834 /* LaunchScreen.storyboard */,
 				CE443C911BA6B72200D0B834 /* Info.plist */,
+				CE443CB51BA6BB5A00D0B834 /* MyViewController.swift */,
 			);
 			path = CustomRefreshControl;
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE443C881BA6B72200D0B834 /* ViewController.swift in Sources */,
+				CE443CB61BA6BB5A00D0B834 /* MyViewController.swift in Sources */,
 				CE443C861BA6B72200D0B834 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

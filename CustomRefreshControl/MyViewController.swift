@@ -8,12 +8,53 @@
 
 import UIKit
 
-class MyViewController: UIViewController {
-
+class MyViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    let refreshControl = UIRefreshControl()
+    
+    var refreshView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        refreshControl.tintColor = UIColor.clearColor()
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        tableView.addSubview(refreshControl)
+        
+        refreshView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: refreshControl.frame.height))
+        refreshView.layer.cornerRadius = 2
+        refreshView.backgroundColor = UIColor.redColor()
+        refreshControl.addSubview(refreshView)
 
-        // Do any additional setup after loading the view.
+    }
+    
+    func refresh (sender:AnyObject){
+        startAnimation()
+        performSelector("stopAnimation", withObject: nil, afterDelay: 10)
+    }
+    
+    func startAnimation(){
+        UIView.animateWithDuration(0.5, delay: 0, options: [UIViewAnimationOptions.Repeat,UIViewAnimationOptions.Autoreverse], animations: { () -> Void in
+//            self.refreshView.center.x = self.refreshControl.frame.width - 2
+            self.refreshView.transform = CGAffineTransformMakeScale(3, 1)
+            }) { (finish) -> Void in
+                self.refreshControl.endRefreshing()
+        }
+    }
+    
+    func stopAnimation(){
+        refreshView.layer.removeAllAnimations()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +62,15 @@ class MyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 10
     }
-    */
-
+    
+    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }
