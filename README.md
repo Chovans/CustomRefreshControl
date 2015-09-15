@@ -1,5 +1,7 @@
 # CustomRefreshControl
 
+参考：https://dribbble.com/shots/1838589-Dapper-Loading-Animation
+
 ###iOS 自定义刷新动画demo
 1.清理默认的UIRefreshControl<br />
 
