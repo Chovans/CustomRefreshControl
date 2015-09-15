@@ -14,7 +14,7 @@ class MyViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
     
     let refreshControl = UIRefreshControl()
     
-    var refreshView = UIView()
+    var refreshView = RefreshControlView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +32,8 @@ class MyViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         
         tableView.addSubview(refreshControl)
         
-        refreshView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: refreshControl.frame.height))
-        refreshView.layer.cornerRadius = 2
-        refreshView.backgroundColor = UIColor.redColor()
+        refreshView = RefreshControlView(frame: refreshControl.frame)
+
         refreshControl.addSubview(refreshView)
 
     }
@@ -45,12 +44,7 @@ class MyViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
     }
     
     func startAnimation(){
-        UIView.animateWithDuration(0.5, delay: 0, options: [UIViewAnimationOptions.Repeat,UIViewAnimationOptions.Autoreverse], animations: { () -> Void in
-//            self.refreshView.center.x = self.refreshControl.frame.width - 2
-            self.refreshView.transform = CGAffineTransformMakeScale(3, 1)
-            }) { (finish) -> Void in
-                self.refreshControl.endRefreshing()
-        }
+        refreshView.startAnimation()
     }
     
     func stopAnimation(){

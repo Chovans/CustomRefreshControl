@@ -14,6 +14,8 @@
 		CE443C9B1BA6B72200D0B834 /* CustomRefreshControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443C9A1BA6B72200D0B834 /* CustomRefreshControlTests.swift */; };
 		CE443CA61BA6B72200D0B834 /* CustomRefreshControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443CA51BA6B72200D0B834 /* CustomRefreshControlUITests.swift */; };
 		CE443CB61BA6BB5A00D0B834 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443CB51BA6BB5A00D0B834 /* MyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CE443CC01BA7DA8300D0B834 /* RefreshControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443CBF1BA7DA8300D0B834 /* RefreshControlView.swift */; settings = {ASSET_TAGS = (); }; };
+		CE443CC21BA7E03C00D0B834 /* ImageGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE443CC11BA7E03C00D0B834 /* ImageGif.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CE443CA51BA6B72200D0B834 /* CustomRefreshControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRefreshControlUITests.swift; sourceTree = "<group>"; };
 		CE443CA71BA6B72200D0B834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE443CB51BA6BB5A00D0B834 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		CE443CBF1BA7DA8300D0B834 /* RefreshControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControlView.swift; sourceTree = "<group>"; };
+		CE443CC11BA7E03C00D0B834 /* ImageGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGif.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				CE443C8E1BA6B72200D0B834 /* LaunchScreen.storyboard */,
 				CE443C911BA6B72200D0B834 /* Info.plist */,
 				CE443CB51BA6BB5A00D0B834 /* MyViewController.swift */,
+				CE443CBF1BA7DA8300D0B834 /* RefreshControlView.swift */,
+				CE443CC11BA7E03C00D0B834 /* ImageGif.swift */,
 			);
 			path = CustomRefreshControl;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				CE443CB61BA6BB5A00D0B834 /* MyViewController.swift in Sources */,
 				CE443C861BA6B72200D0B834 /* AppDelegate.swift in Sources */,
+				CE443CC21BA7E03C00D0B834 /* ImageGif.swift in Sources */,
+				CE443CC01BA7DA8300D0B834 /* RefreshControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomRefreshControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chovans.CustomRefreshControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomRefreshControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chovans.CustomRefreshControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
