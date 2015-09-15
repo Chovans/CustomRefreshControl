@@ -21,3 +21,8 @@
 
         // Returns an animated UIImage
         UIImage.animatedImageWithData(imageData)
+
+
+###效果
+
+![github](https://github.com/Chovans/CustomRefreshControl/blob/master/show.gif)
