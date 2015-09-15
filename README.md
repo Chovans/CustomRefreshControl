@@ -11,3 +11,13 @@
     rc.addSubView(UIView(size))
     
 3.对子view进行动画描写<br />
+
+
+###动态gif图片的引入，首先需要引入ImageGif.swift(第三方库，摘自哪忘了。原生并不支持gif格式)<br />
+
+        // jeremy.gif
+        var url = NSBundle.mainBundle().URLForResource("jeremy", withExtension: "gif")
+        var imageData = NSData(contentsOfURL: url)
+
+        // Returns an animated UIImage
+        UIImage.animatedImageWithData(imageData)
